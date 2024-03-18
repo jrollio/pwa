@@ -13,6 +13,13 @@ module.exports = {
   devServer: {
     // The `hot` option is to use the webpack-dev-server in combination with the hot module replacement API.
     hot: 'only',
+    devMiddleware: {
+      index: true,
+      mimeTypes: { phtml: 'text/html' },
+      publicPath: '/publicPathForDevServe',
+      serverSideRender: true,
+      writeToDisk: true,
+    }
   },
 
   plugins: [

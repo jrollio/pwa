@@ -14,6 +14,7 @@
  limitations under the License.
  */
 if ('serviceWorker' in Navigator) {
+  console.log('registering worker')
   window.addEventListener('load', async () => {
     try {
       let reg;
